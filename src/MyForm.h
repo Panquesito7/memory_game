@@ -181,9 +181,10 @@ private: System::ComponentModel::IContainer^ components;
 			// 
 			// button1
 			// 
-			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button1, L"button1");
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button1->Name = L"button1";
+			this->toolTip1->SetToolTip(this->button1, resources->GetString(L"button1.ToolTip"));
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -199,76 +200,86 @@ private: System::ComponentModel::IContainer^ components;
 			// 
 			resources->ApplyResources(this->label2, L"label2");
 			this->label2->Name = L"label2";
+			this->toolTip1->SetToolTip(this->label2, resources->GetString(L"label2.ToolTip"));
 			// 
 			// button2
 			// 
-			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button2, L"button2");
+			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button2->Name = L"button2";
+			this->toolTip1->SetToolTip(this->button2, resources->GetString(L"button2.ToolTip"));
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// button3
 			// 
-			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button3, L"button3");
+			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button3->Name = L"button3";
+			this->toolTip1->SetToolTip(this->button3, resources->GetString(L"button3.ToolTip"));
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// button4
 			// 
-			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button4, L"button4");
+			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button4->Name = L"button4";
+			this->toolTip1->SetToolTip(this->button4, resources->GetString(L"button4.ToolTip"));
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click_1);
 			// 
 			// button5
 			// 
-			this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button5, L"button5");
+			this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button5->Name = L"button5";
+			this->toolTip1->SetToolTip(this->button5, resources->GetString(L"button5.ToolTip"));
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
 			// button6
 			// 
-			this->button6->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button6, L"button6");
+			this->button6->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button6->Name = L"button6";
+			this->toolTip1->SetToolTip(this->button6, resources->GetString(L"button6.ToolTip"));
 			this->button6->UseVisualStyleBackColor = true;
 			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
 			// 
 			// button7
 			// 
-			this->button7->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button7, L"button7");
+			this->button7->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button7->Name = L"button7";
+			this->toolTip1->SetToolTip(this->button7, resources->GetString(L"button7.ToolTip"));
 			this->button7->UseVisualStyleBackColor = true;
 			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
 			// 
 			// button8
 			// 
-			this->button8->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button8, L"button8");
+			this->button8->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button8->Name = L"button8";
+			this->toolTip1->SetToolTip(this->button8, resources->GetString(L"button8.ToolTip"));
 			this->button8->UseVisualStyleBackColor = true;
 			this->button8->Click += gcnew System::EventHandler(this, &MyForm::button8_Click);
 			// 
 			// button9
 			// 
-			this->button9->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button9, L"button9");
+			this->button9->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button9->Name = L"button9";
+			this->toolTip1->SetToolTip(this->button9, resources->GetString(L"button9.ToolTip"));
 			this->button9->UseVisualStyleBackColor = true;
 			this->button9->Click += gcnew System::EventHandler(this, &MyForm::button9_Click);
 			// 
 			// button10
 			// 
-			this->button10->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button10, L"button10");
+			this->button10->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button10->Name = L"button10";
+			this->toolTip1->SetToolTip(this->button10, resources->GetString(L"button10.ToolTip"));
 			this->button10->UseVisualStyleBackColor = true;
 			this->button10->Click += gcnew System::EventHandler(this, &MyForm::button10_Click);
 			// 
@@ -276,24 +287,26 @@ private: System::ComponentModel::IContainer^ components;
 			// 
 			resources->ApplyResources(this->label3, L"label3");
 			this->label3->Name = L"label3";
+			this->toolTip1->SetToolTip(this->label3, resources->GetString(L"label3.ToolTip"));
 			this->label3->Click += gcnew System::EventHandler(this, &MyForm::label3_Click);
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->helpToolStripMenuItem });
 			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->helpToolStripMenuItem });
 			this->menuStrip1->Name = L"menuStrip1";
+			this->toolTip1->SetToolTip(this->menuStrip1, resources->GetString(L"menuStrip1.ToolTip"));
 			// 
 			// helpToolStripMenuItem
 			// 
+			resources->ApplyResources(this->helpToolStripMenuItem, L"helpToolStripMenuItem");
 			this->helpToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->aboutToolStripMenuItem });
 			this->helpToolStripMenuItem->Name = L"helpToolStripMenuItem";
-			resources->ApplyResources(this->helpToolStripMenuItem, L"helpToolStripMenuItem");
 			// 
 			// aboutToolStripMenuItem
 			// 
-			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
 			resources->ApplyResources(this->aboutToolStripMenuItem, L"aboutToolStripMenuItem");
+			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
 			this->aboutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::aboutToolStripMenuItem_Click);
 			// 
 			// toolTip1
@@ -305,9 +318,10 @@ private: System::ComponentModel::IContainer^ components;
 			// 
 			// button11
 			// 
-			this->button11->Cursor = System::Windows::Forms::Cursors::Hand;
 			resources->ApplyResources(this->button11, L"button11");
+			this->button11->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button11->Name = L"button11";
+			this->toolTip1->SetToolTip(this->button11, resources->GetString(L"button11.ToolTip"));
 			this->button11->UseVisualStyleBackColor = true;
 			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click_1);
 			// 
@@ -335,6 +349,7 @@ private: System::ComponentModel::IContainer^ components;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
+			this->toolTip1->SetToolTip(this, resources->GetString(L"$this.ToolTip"));
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
