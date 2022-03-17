@@ -12,7 +12,7 @@ Create a project, download [`src/MyForm.cpp`](https://github.com/Panquesito7/mem
 **Not sure which components to install or add to Visual Studio?**\
 **[An article](https://dev.to/panquesito7/how-to-create-a-tic-tac-toe-game-in-cli-c-in-windows-3l9g) that builds a project in Windows Forms might help in installing the necessary tools. Note that it might vary from your current version/toolset.**
 
-If you're experiencing any errors, don't hesitate to [**report it**](https://github.com/Panquesito7/memory-game/issues/choose) to us!
+If you're experiencing any errors, don't hesitate to [**report it**](https://github.com/Panquesito7/memory-game/issues/new/choose) to us!
 
 ### Any help you need, let us know!
 
