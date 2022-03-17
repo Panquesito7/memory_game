@@ -136,6 +136,9 @@ namespace Project1 {
 	private: System::Windows::Forms::ToolStripMenuItem^ helpToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ aboutToolStripMenuItem;
 private: System::Windows::Forms::ToolTip^ toolTip1;
+private: System::Windows::Forms::Button^ button11;
+
+
 
 private: System::ComponentModel::IContainer^ components;
 
@@ -172,6 +175,7 @@ private: System::ComponentModel::IContainer^ components;
 			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolTip1 = (gcnew System::Windows::Forms::ToolTip(this->components));
+			this->button11 = (gcnew System::Windows::Forms::Button());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -299,10 +303,19 @@ private: System::ComponentModel::IContainer^ components;
 			this->toolTip1->ReshowDelay = 100;
 			this->toolTip1->ToolTipTitle = L"Memory Game information";
 			// 
+			// button11
+			// 
+			this->button11->Cursor = System::Windows::Forms::Cursors::Hand;
+			resources->ApplyResources(this->button11, L"button11");
+			this->button11->Name = L"button11";
+			this->button11->UseVisualStyleBackColor = true;
+			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click_1);
+			// 
 			// MyForm
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->button11);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button10);
 			this->Controls->Add(this->button9);
@@ -330,7 +343,7 @@ private: System::ComponentModel::IContainer^ components;
 
 		}
 #pragma endregion
-		int random_number = 0;        ///< Used to select the random card choice.
+		int random_number = 0;       ///< Used to select the random card choice.
 		bool already_srand = false; ///< Makes sure `srand` was already ran or not.
 		int count = 0;              ///< Card count.
 
@@ -514,44 +527,65 @@ private: System::ComponentModel::IContainer^ components;
 		System::Diagnostics::Process::Start("https://en.wikipedia.org/wiki/Concentration_(card_game)");
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		button1->Text = var1; // Here we set the random value we did previously (line 46-92)
-		button_click(sender);
+		if (button1->Text == "") { // Do NOT run if the text has a value already
+			button1->Text = var1; // Here we set the random value we did previously (line 46-92)
+			button_click(sender);
+		}
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		button2->Text = var2; // Here we set the random value we did previously (line 46-92)
-		button_click(sender);
+		if (button2->Text == "") { // Do NOT run if the text has a value already
+			button2->Text = var2; // Here we set the random value we did previously (line 46-92)
+			button_click(sender);
+		}
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		button3->Text = var3; // Here we set the random value we did previously (line 46-92)
-		button_click(sender);
+		if (button3->Text == "") { // Do NOT run if the text has a value already
+			button3->Text = var3; // Here we set the random value we did previously (line 46-92)
+			button_click(sender);
+		}
 	}
 private: System::Void button4_Click_1(System::Object^ sender, System::EventArgs^ e) {
-	button4->Text = var4; // Here we set the random value we did previously (line 46-92)
-	button_click(sender);
+	if (button4->Text == "") { // Do NOT run if the text has a value already
+		button4->Text = var4; // Here we set the random value we did previously (line 46-92)
+		button_click(sender);
+
+	}
 }
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-	button5->Text = var5; // Here we set the random value we did previously (line 46-92)
-	button_click(sender);
+	if (button5->Text == "") { // Do NOT run if the text has a value already
+		button5->Text = var5; // Here we set the random value we did previously (line 46-92)
+		button_click(sender);
+	}
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
-	button6->Text = var6; // Here we set the random value we did previously (line 46-92)
-	button_click(sender);
+	if (button6->Text == "") { // Do NOT run if the text has a value already
+		button6->Text = var6; // Here we set the random value we did previously (line 46-92)
+		button_click(sender);
+	}
 }
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
-	button7->Text = var7; // Here we set the random value we did previously (line 46-92)
-	button_click(sender);
+	if (button7->Text == "") { // Do NOT run if the text has a value already
+		button7->Text = var7; // Here we set the random value we did previously (line 46-92)
+		button_click(sender);
+	}
 }
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
-	button8->Text = var8; // Here we set the random value we did previously (line 46-92)
-	button_click(sender);
+	if (button8->Text == "") { // Do NOT run if the text has a value already
+		button8->Text = var8; // Here we set the random value we did previously (line 46-92)
+		button_click(sender);
+	}
 }
 private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
-	button9->Text = var9; // Here we set the random value we did previously (line 46-92)
-	button_click(sender);
+	if (button9->Text == "") { // Do NOT run if the text has a value already
+		button9->Text = var9; // Here we set the random value we did previously (line 46-92)
+		button_click(sender);
+	}
 }
 private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) {
-	button10->Text = var10; // Here we set the random value we did previously (line 46-92)
-	button_click(sender);
+	if (button10->Text == "") { // Do NOT run if the text has a value already
+		button10->Text = var10; // Here we set the random value we did previously (line 46-92)
+		button_click(sender);
+	}
 }
 private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -560,12 +594,86 @@ private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void aboutToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		// MessageBox to show when the `About` button is being clicked
 		MessageBox::Show(this,
 		"Memory Game, v0.1 (initial release)\n"
 		"Copyright (C) 2022 David Leal (halfpacho@gmail.com)\n"
 		"\nLicensed under GNU Affero General Public License v3.0\n"
 		"Visit https://www.gnu.org/licenses/agpl-3.0.en.html for more information about the license.", "About", MessageBoxButtons::OK, MessageBoxIcon::Information);
+}
+private: System::Void button11_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	System::Windows::Forms::DialogResult result = MessageBox::Show(this, "Are you sure you want to restart the game?", "Restart game", MessageBoxButtons::YesNo, MessageBoxIcon::Exclamation);
+
+	if (System::Windows::Forms::DialogResult::No == result)
+	{
+		// "No" or "Cancel" button.
+		return;
+	}
+	else {
+		count = 0;
+		count_button = 1;
+
+		count1 = 0;
+		count2 = 0;
+		count3 = 0;
+		count4 = 0;
+		count5 = 0;
+
+		button_name = "";
+		first_btn_value = "";
+		label3->Text = "";
+
+		flag = false;
+
+		repeat_numbers(button1);
+
+		var1 = button1->Text;
+		button1->Text = "";
+
+		repeat_numbers(button2);
+
+		var2 = button2->Text;
+		button2->Text = "";
+
+		repeat_numbers(button3);
+
+		var3 = button3->Text;
+		button3->Text = "";
+
+		repeat_numbers(button4);
+
+		var4 = button4->Text;
+		button4->Text = "";
+
+		repeat_numbers(button5);
+
+		var5 = button5->Text;
+		button5->Text = "";
+
+		repeat_numbers(button6);
+
+		var6 = button6->Text;
+		button6->Text = "";
+
+		repeat_numbers(button7);
+
+		var7 = button7->Text;
+		button7->Text = "";
+
+		repeat_numbers(button8);
+
+		var8 = button8->Text;
+		button8->Text = "";
+
+		repeat_numbers(button9);
+
+		var9 = button9->Text;
+		button9->Text = "";
+
+		repeat_numbers(button10);
+
+		var10 = button10->Text;
+		button10->Text = "";
+	}
 }
 };
 }
