@@ -4,6 +4,8 @@
 
 A Memory Game made in C++ using Windows Forms, CLI/CLR.
 
+https://user-images.githubusercontent.com/51391473/201742419-dc34d0f1-98c4-4147-876b-4c7a98f39b19.mp4
+
 ## Compiling the program
 
 You can play this game by compiling the code using [Microsoft Visual Studio 2022](https://visualstudio.microsoft.com/).\
