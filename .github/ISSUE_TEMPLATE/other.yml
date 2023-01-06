@@ -4,9 +4,6 @@ title: "[OTHER]"
 labels: ["awaiting triage"]
 assignees: Panquesito7
 body:
-  - type: markdown
-    attributes:
-      value: "# Other issue"
   - type: textarea
     id: issuedescription
     attributes:
