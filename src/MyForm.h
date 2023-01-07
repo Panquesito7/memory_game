@@ -1,6 +1,6 @@
 /**
  * Memory Game, implemented in C++/CLI/CLR using Windows forms.
- * Copyright (C) 2022 David Leal (halfpacho@gmail.com)
+ * Copyright (C) 2022-2023 David Leal (halfpacho@gmail.com)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -382,7 +382,7 @@ private: System::ComponentModel::IContainer^ components;
 		 */
 		void repeat_numbers(Button^ button) {
 			if (already_srand == false) {
-				srand(time(NULL));
+				srand(time(nullptr));
 				already_srand = true;
 			}
 			random_number = rand() % 5 + 1;
