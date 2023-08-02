@@ -20,7 +20,7 @@ If you're experiencing any errors, don't hesitate to [**report it**](https://git
 
 ## License
 
-Copyright (C) 2022 David Leal (halfpacho@gmail.com)\
+Copyright (C) 2022-2023 David Leal (halfpacho@gmail.com)\
 This program is licensed under the [GNU AGPLv3.0](http://www.gnu.org/licenses/agpl-3.0.html) license.
 
 See [`LICENSE.md`](https://github.com/Panquesito7/memory-game/blob/main/LICENSE.md) for more information.

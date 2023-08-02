@@ -1,6 +1,6 @@
 /**
  * Memory Game, implemented in C++/CLI/CLR using Windows forms.
- * Copyright (C) 2022 David Leal (halfpacho@gmail.com)
+ * Copyright (C) 2022-2023 David Leal (halfpacho@gmail.com)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
