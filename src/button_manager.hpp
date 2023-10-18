@@ -1,5 +1,5 @@
 /**
- * Memory Game, implemented in C++/CLI/CLR using Windows forms.
+ * Memory Game with buttons, implemented in C++/CLR using Windows forms.
  * Copyright (C) 2022-2023 David Leal (halfpacho@gmail.com)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,12 +16,13 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include "MyForm.h"
+#ifndef BUTTON_MANAGER_HPP
+#define BUTTON_MANAGER_HPP
 
-[System::STAThread]
-void main(array<System::String^>^ args) {
-	System::Windows::Forms::Application::EnableVisualStyles();
-	System::Windows::Forms::Application::SetCompatibleTextRenderingDefault(false);
-	Project1::MyForm form;
-	System::Windows::Forms::Application::Run(% form);
-}
+extern int count;
+extern int count_button;
+
+extern bool flag;
+void set_button_value(System::Windows::Forms::Button^, System::Windows::Forms::Label^, array<System::Windows::Forms::Button^>^, System::String^%, System::String^%);
+
+#endif BUTTON_MANAGER_HPP // BUTTON_MANAGER_HPP
