@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by Project1.rc
+// Used by Memory_Game.rc
 
 // Valores predeterminados siguientes para nuevos objetos
 // 
