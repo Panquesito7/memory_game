@@ -3,10 +3,26 @@
 # which are then uploaded as release assets in any release.
 
 mkdir -p binaries
-7z a -mx=9 -tzip memory_game-x64.zip vc_redistributable_links.txt x64/Release/Memory_Game.exe
-7z a -mx=9 -ttar memory_game-x64.tar vc_redistributable_links.txt x64/Release/Memory_Game.exe
-7z a -mx=9 -tzip memory_game-x86.zip vc_redistributable_links.txt Release/Memory_Game.exe
-7z a -mx=9 -ttar memory_game-x86.tar vc_redistributable_links.txt Release/Memory_Game.exe
+
+cd x64/Release
+7z a -mx=9 -tzip ../../memory_game-x64.zip Memory_Game.exe
+cd ../..
+7z a -mx=9 -tzip memory_game-x64.zip vc_redistributable_links.txt
+
+cd x64/Release
+7z a -mx=9 -ttar ../../memory_game-x64.tar Memory_Game.exe
+cd ../..
+7z a -mx=9 -ttar memory_game-x64.tar vc_redistributable_links.txt
+
+cd Release
+7z a -mx=9 -tzip ../memory_game-x86.zip Memory_Game.exe
+cd ..
+7z a -mx=9 -tzip memory_game-x86.zip vc_redistributable_links.txt
+
+cd Release
+7z a -mx=9 -ttar ../memory_game-x86.tar Memory_Game.exe
+cd ..
+7z a -mx=9 -ttar memory_game-x86.tar vc_redistributable_links.txt
 
 # Use the GZip compression algorithm
 7z a -mx=9 -tgzip memory_game-x64.tar.gz memory_game-x64.tar
