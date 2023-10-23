@@ -2,7 +2,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by Memory_Game.rc
 
-// Valores predeterminados siguientes para nuevos objetos
+// Default values used for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
